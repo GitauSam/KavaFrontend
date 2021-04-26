@@ -1,16 +1,16 @@
-# kava_journal
+# Kava Journal Front End
 
-A new Flutter application.
+This application consumes the apis exposed by Kava Backend (https://github.com/GitauSam/KavaBackend).
 
-## Getting Started
+## How To Run
 
-This project is a starting point for a Flutter application.
+#### Prerequisites
+ngrok
+flutter environment setup (Get proper details here: https://flutter.dev/docs/get-started/install)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Steps
+1. First run the backend application.
+2. Create a tunnel using ngrok to localhost port 8000 './ngrok http 8000'.
+3. Copy the secure tunnel link provided by ngrok.
+4. Paste the link to the static url variable in the AppConstants class found in app_constants.dart file e.g static String url = "https://0b37d59a716e.ngrok.io".
+5. Then run the application.
